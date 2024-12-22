@@ -233,7 +233,7 @@ audio {
     background:url('../img/cat.png');
     background-size:200% 200%;
     animation: cat 50s infinite linear;
-    opacity: .1;
+    opacity: .3;
 }
 
 @keyframes cat {
