@@ -152,3 +152,17 @@ audioBtn.addEventListener('click', () => {
     audioBtn.title = "Play";
     }
 });
+
+//----- Hi :D -----//
+const urlParams = new URLSearchParams(window.location.search);
+const musicParam = urlParams.get('music');
+
+if (musicParam && musicParam.endsWith('.mp3')) {
+  const musicUrl = `https://azuq.lol/assets/music/${musicParam}`;
+  fetch(musicUrl, { method: 'HEAD' })
+    .then((res) => {
+      if (res.ok) {
+        audio.src = musicUrl;
+      }
+    }).catch(() => {});
+}
