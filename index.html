@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>azuq</title>
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="assets/js/twemoji.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
+  <meta name="author" content="azuq">
+  <meta name="title" content="azuq">
+  <meta name="application-name" content="azuq">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@azuq">
+  <meta name="twitter:creator" content="@azuq">
+  <meta name="keywords" content="azuq, lexi, macos, window, streamer, tiktoker, youtuber, discord, bio, personal site, website, music, confetti">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="azuq's personal website.">
+  <meta name="theme-color" content="#f9f9f9">
+  <meta property="og:title" content="azuq">
+  <meta property="og:description" content="azuq's personal website.">
+</head>
+<body>
+  <div class="xd">
+    <p>click to enter</p>
+  </div>
+
+  <div class="cat"></div>
+  <canvas class="canvas"></canvas>
+  
+  <div class="window">
+    <div class="window-header">
+      <div class="buttons">
+        <div class="button"></div>
+        <div class="button yellow"></div>
+        <div class="button green" id="confetti-btn" title="psst... double-click me"></div>
+      </div>
+      <h1>azuq</h1>
+    </div>
+    <div class="window-content">
+      <div class="container">
+        <div class="profile">
+          <img
+            src="assets/img/placeholder.png"
+            alt="pfp"
+          />
+          <div class="status"></div>
+        </div>
+        <h1 class="username">loading...</h1>
+        <p id="subtext">offline</p>
+
+        <div class="socials">
+          <a href="https://www.youtube.com/@azuq" target="_blank" title="YouTube"><i class="bx bxl-youtube"></i></a>
+          <a href="https://www.tiktok.com/@azuq.lol" target="_blank" title="TikTok"><i class="bx bxl-tiktok"></i></a>
+          <a href="https://discord.com/users/619220119805100033" target="_blank" title="Discord"><i class="bx bxl-discord-alt"></i></a>
+          <a href="https://lexi.lol" target="_blank" title="Main website"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio src="assets/music/music.mp3" class="audio" preload="auto" loop></audio>
+  <button class="audio-btn" id="audio-btn" title="Play">
+    <i class='bx bx-play'></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
