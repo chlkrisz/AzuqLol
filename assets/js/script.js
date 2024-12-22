@@ -28,8 +28,17 @@ xd.addEventListener('click', () => {
     let subtext = '';
     
     const customStatus = lanyard.data.activities.find(activity => activity.type === 4);
-    if(customStatus) subtext = (customStatus.emoji ? customStatus.emoji.name + ' ' : '') + customStatus.state + "<br>";
-
+    if (customStatus) {
+        const emojiPart = customStatus.emoji
+            ? customStatus.emoji.id 
+            ? `<img src="https://cdn.discordapp.com/emojis/${customStatus.emoji.id}.png" class="emoji">` 
+            : customStatus.emoji.name
+            : '';
+        
+        const statePart = customStatus.state || '';
+        
+        subtext = `${emojiPart}${statePart}<br>`;
+    }
     if (lanyard.data.listening_to_spotify) {
       subtext = 'Listening to <b>Spotify</b>';
     } 
