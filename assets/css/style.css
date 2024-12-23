@@ -288,3 +288,13 @@ img.emoji{
     vertical-align: middle;
     aspect-ratio: 1/1;
 }
+
+.os {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 12px;
+    color: #333;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
